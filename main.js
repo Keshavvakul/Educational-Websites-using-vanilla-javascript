@@ -18,10 +18,8 @@ faqs.forEach(faq => {
         const icon = faq.querySelector('.faq__icons i') 
         if(icon.className === ('bi bi-plus')) {
             icon.className = ('bi bi-dash');
-            console.log("working");
         } else if (icon.className === ('bi bi-dash')) {
             icon.className = ('bi bi-plus')
-            console.log("working");
         }
     })
 }) 
