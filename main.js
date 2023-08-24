@@ -8,34 +8,20 @@ window.addEventListener('scroll', () => {
 
 // Show/hide faq answers inside the paragraph tag
 
- /* const faqs = document.querySelectorAll('.faq');
+const faqs = document.querySelectorAll('.faq');
 
 faqs.forEach(faq => {
     faq.addEventListener('click', () => {
         faq.classList.toggle('open');
 
         // Change icons
-
-        const icon = document.querySelector('.faq__icons');
-        const svgIcon = icon.querySelector('svg');
-
-        svgIcon.addEventListener('click', () => {
-            if(this.classList.contains('bi bi-plus')) {
-                this.classList.remove('bi bi-plus');
-                this.classList.add('bi bi-dash');
-                console.log("Working")        
-            }else if (this.classList.contains('bi bi-dash')) {
-                this.classList.remove('bi bi-dash');
-                this.classList.add('bi bi-plus');
-            }
-        })
+        const icon = faq.querySelector('.faq__icons i') 
+        if(icon.className === ('bi bi-plus')) {
+            icon.className = ('bi bi-dash');
+            console.log("working");
+        } else if (icon.className === ('bi bi-dash')) {
+            icon.className = ('bi bi-plus')
+            console.log("working");
+        }
     })
-}) */
-
-const faqs = document.querySelector('.faq');
-
-faqs.forEach(faq => {
-    faq.addEventListener('click', () => {
-        faq.classList.toggle('open');
-    })
-});
+}) 

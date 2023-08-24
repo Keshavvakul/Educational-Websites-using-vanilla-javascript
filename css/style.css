@@ -304,6 +304,7 @@ header {
 
 .faq__icons {
     align-self: flex-start;
+    font-size: 1.9rem;
 }
 
 .faq p {
@@ -314,3 +315,108 @@ header {
 .faq.open p {
     display: block;
 }
+
+/* ======================= Testimonials ================================= */
+
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding: 2rem;
+}
+
+.student {
+    width: 6rem;
+    height: 4rem;
+    border-radius: 60%;
+    overflow: hidden;
+    margin: 0 50rem 1rem;
+    border: 0.6rem solid var(--color-bg1);
+}
+
+.testimonial__info {
+    text-align: center;
+    margin-left: 3rem;
+}
+
+.testimonial__body {
+    background-color: var(--color-primary);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial__body::before {
+    /*In CSS, the term "pseudo-element" refers to a special kind of selector that allows you to style a specific part of an element.
+      The pseudo-elements are used to style parts of an element that are not part of the actual HTML content, such as adding decorative content before or after an element
+      */
+    content: "";
+    display: block;
+    background: linear-gradient(    /*Helps in giving shady look*/
+        135deg,
+        transparent,    
+        var(--color-primary),
+        var(--color-primary),
+        var(--color-primary)
+        );
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg); /*Used to rotate the block that looks like an arrow, just change background color*/
+}
+
+/*To make slider, i used swiper Js*/
+
+
+/* ======================= Footer ================================= */
+
+footer {
+    background-color: var(--color-bg1);
+    padding-top: 5rem;
+    font-size: 0.9rem;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+}
+
+.footer__container > div h4 {
+    margin-bottom: 1.2rem;
+}
+
+.footer__1 p {
+    margin: 0 0 2rem;   
+}
+
+.footer__2 ul li {
+    margin-bottom: 0.7rem;
+}
+
+.footer__2 ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer__socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem 0;
+    border-top: 1px solid var(--color-bg2);
+}
+
+
+/* ======================= MEDIA QUERIES (TABLETS) ================================= */
+
