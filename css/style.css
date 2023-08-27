@@ -477,6 +477,15 @@ footer {
         height: 5rem;
     }
 
+    @keyframes animateNavItems {
+        0% {                        /*Start of the animation instead of 0% to 100% we can also do from to*/
+            transform: rotateZ(-90deg);
+        }
+        100% {                      /*End of the animation*/
+            transform: rotateZ(0degx);
+        }
+    }
+
     .nav__menu li a {
         background-color: var(--color-primary);
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.7);
