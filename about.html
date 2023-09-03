@@ -322,12 +322,16 @@
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse molestiae at nulla, possimus iste recusandae quisquam perspiciatis magni, nisi modi deserunt, odit consequuntur inventore? Ut aliquid expedita animi ducimus tenetur.</p>
                 </div>
             </article>
+            </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            </div>
+
         </div>
     </section>
 
-    <!--========================= END OF FAQS ============================-->
+    <!--========================= END OF Testimonials ============================-->
 
     <footer>
         <div class="container footer__container">
@@ -388,17 +392,25 @@
 
 
 
-
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      cssMode: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+
+    
     <script src="/main.js"></script>
 
     

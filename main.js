@@ -27,9 +27,9 @@ faqs.forEach(faq => {
 
 // Show/hide nav menu in smaller devices
 
-const menu = document.querySelector('nav__menu');
+const menu = document.querySelector('.nav__menu');
 const menuBtn = document.querySelector('#open-menu-btn');
-const closeBtn = document.querySelector('#close-menu-btn"');
+const closeBtn = document.querySelector('#close-menu-btn');
 
 menuBtn.addEventListener('click', () => {
     menu.style.display = "flex";
